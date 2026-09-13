@@ -1,3 +1,6 @@
 {
-  "beautify.config": ""
+  "beautify.config": "",
+  "cSpell.words": [
+    "nabla"
+  ]
 }

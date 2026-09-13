@@ -1,0 +1,9 @@
+/* cspell:ignore playwrite */
+/* Playwrite AU QLD font styles */
+
+.playwrite-au-qld {
+  font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
