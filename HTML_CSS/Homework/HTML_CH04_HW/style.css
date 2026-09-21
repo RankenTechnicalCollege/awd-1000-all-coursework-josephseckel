@@ -1,89 +1,53 @@
-/* Relative measurement using % */
+/* Relative and absolute measurements */
 body {
-width: 90%;
-margin: auto;
-
-/* Shorthand font property: style, weight, size, line-height, family */
-font: normal 400 16px/1.5 Arial, sans-serif;
-
-background-color: #ffffff;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333333;
 }
 
-/* Hex color */
 header {
-background-color: #1d3557;
-color: white;
-padding: 25px;
-text-align: center;
+  padding: 20px;
 }
 
-/* Text shadow */
 h1 {
-text-shadow: 2px 2px 4px #000000;
-}
-
-/* Absolute measurement using px */
-nav {
-padding: 20px;
-text-align: center;
-
-/* Gradient */
-background: linear-gradient(to right, #457b9d, #1d3557);
-}
-
-/* Multiple selector */
-nav a,
-footer p {
-color: white;
-}
-
-/* Child selector */
-nav > a {
-margin: 15px;
-text-decoration: none;
-}
-
-/* Pseudo-classes */
-nav a:hover, nav a:focus { color: yellow; }
-nav a:hover {
-color: yellow;
-}
-
-nav a:focus {
-color: orange;
+  font-size: 2em;
+  color: rgb(0, 51, 102);
+  text-shadow: 2px 2px 4px #666666;
 }
 
 /* Descendant selector */
 main p {
-font-size: 18px;
+  line-height: 1.5;
 }
 
-/* RGB color */
-section {
-background-color: rgb(255, 255, 255);
-margin: 20px 0;
-padding: 20px;
-}
-
-/* RGBA color */
-.car-list {
-background-color: rgba(69, 123, 157, 0.25);
-padding: 15px;
-}
-
-/* Multiple selector */
+/* Multiple selectors */
 h2,
+.car-list p {
+  color: rgb(30, 30, 30);
+}
+
+/* Child selector */
+nav > a {
+  color: #0066cc;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* Pseudo-class */
+nav a:hover,
+nav a:focus {
+  color: rgba(0, 102, 204, 0.8);
+  text-decoration: underline;
+}
+
+/* rgba */
 .special {
-font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
 }
 
-/* Demonstrates cascade with embedded and inline CSS */
-h2 {
-color: rgb(142, 148, 66);
-}
-
-footer {
-background-color: #1d3557;
-padding: 15px;
-text-align: center;
+/* Shorthand font */
+footer p {
+  font: italic bold 1em/1.5 Georgia, serif;
 }
