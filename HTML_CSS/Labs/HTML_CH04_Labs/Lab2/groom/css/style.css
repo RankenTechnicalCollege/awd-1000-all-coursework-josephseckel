@@ -64,13 +64,20 @@ main ul {
   list-style: square;
 }
 
-.class {
+.link {
+color: #4d3319;
+text-decoration: none;
+font-weight: bold;
+font-style: italic;
+}
+
+.action {
   font-size: 1.75em;
   font-weight: bold;
   text-align: center;
 }
 
-.id {
+#contact {
   text-align: center;
 }
 
