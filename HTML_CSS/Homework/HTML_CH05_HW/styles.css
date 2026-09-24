@@ -1,0 +1,87 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+body {
+font-family: "Playwrite AU QLD", cursive;
+ }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f1eb;
+  color: #18232b;
+}
+
+header {
+  padding: 28px 20px;
+  background-color: #18232b;
+  color: #ffffff;
+  text-align: center;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: #24353e;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 8px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #e5a83b;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin:  auto;
+  padding: 24px 0;
+}
+
+.content {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.content h1,
+.content h2 {
+  color: #24353e;
+}
+
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #18232b;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+
+  .content h1 {
+    font-size: 2.25em;
+  }
+
+  .content h2 {
+    font-size: 1.75em;
+  }
+}
