@@ -1,8 +1,5 @@
-/*
-    Student Name
-	File Name: 
-	Current Date: 
-*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* CSS reset */
 body, header, nav, main, footer, img, h1, h3, ul {
@@ -19,6 +16,16 @@ body {
 img {
     max-width: 100%;
     display: block;
+}
+
+
+/* style rules for mobile viewport */
+
+
+/* hiding the tablet-desktop class */
+
+.tablet-desktop {
+display: none;
 }
 
 /* Style rules for header content */
@@ -38,9 +45,11 @@ nav {
 
 nav ul {
     text-align: center;
+    list-style-type: none;
 }
 
 nav li {
+    display: inline-block;
     font-size: 1em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
@@ -64,6 +73,26 @@ main p {
     font-size: 1.25em;
 }
 
+.btn {
+    background-color: #375f1b;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn a {
+    color: #ebf7e3;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+}
+
+.corner {
+    border-radius: 12px;
+}
+ 
 /* Style rules for footer content */
 footer {
     text-align: center;

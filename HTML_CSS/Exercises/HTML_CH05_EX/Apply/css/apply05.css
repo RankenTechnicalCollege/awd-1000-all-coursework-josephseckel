@@ -1,0 +1,90 @@
+/* Style sheet created by: Student's First Name Student's Last Name, Today's Date */
+
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+	background-color: #e4f1f6;
+}
+
+img {
+    max-width: 100%;
+    display:block;
+}
+
+/* style rules for mobile viewport */
+
+/*style rule to hide tablet-desk class */
+.tablet-desk {
+    display: none;
+}
+
+/* Style rule for header */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	text-align: center;
+    padding: 3%;
+    color: #092834;
+    margin-top: 5%;
+}
+
+/* Style rules for nav */
+nav {
+    position: -webk;
+    position: sticky;
+    top: 0;
+	padding: 1%;
+    margin-bottom: 1%;
+    background-color: #67afcb;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 4%;
+    font-family: 'B612', sans-serif;
+}
+
+nav li a {
+    display: block;
+    color: #092834;
+    text-decoration: none;
+}
+
+/* Style rules for main content  */
+main {
+	display: block;
+	margin: 1% 1% 15%;
+	padding: 1%;
+    font-size: 1.5em;
+    font-family: 'Crimson Text', serif;
+}
+
+.corner {
+    border-radius: 12px;
+}
+
+#image {
+    margin-bottom: 1%;
+
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
