@@ -1,0 +1,147 @@
+/*
+Name: Joseph Seckel
+Date: 9/23/26
+File name: style.css
+*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Emblema+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Emblema+One&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+/* style rules for body and images */
+body {
+  background-color: #f6eee4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* style rules for mobile viewport */
+
+
+
+/* style rules to show mobile class and hide tab-desk class */
+.mobile {
+  display: block;
+}
+
+.tab-desk {
+  display: none;
+}
+
+/* style rules for header area */
+.mobile h1, .mobile h3 {
+  padding: 2%;
+  text-align: center;
+
+}
+
+.mobile h1 {
+  font-family: 'Emblema One', sans-serif;
+}
+
+.mobile h3 {
+  font-family: 'Lora', serif;
+}
+
+/* style rules for navigation area */
+nav {
+  background-color: #2a1f14;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  border-top: 0.5px solid #f6eee4;
+  display: block;
+  font-size: 1.5em;
+  font-family: geneva, arial, sans-serif;
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+/* style rules for main content */
+main {
+  padding: 2%;
+  font-family: 'Lora', serif;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding: 2%;
+}
+
+main ul {
+  list-style: square;
+}
+
+.link {
+color: #4d3319;
+text-decoration: none;
+font-weight: bold;
+font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+#contact {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding: 1% 0%;
+}
+
+footer {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
