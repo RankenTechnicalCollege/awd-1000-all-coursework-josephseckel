@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Ranken Student Activities</h1>
+  </header>
+  <nav>
+    <a href="Home">home</a> | <a href="Events">events</a> | <a href="Register">register</a> | <a
+      href="Contact">contact</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Upcoming Events</h2>
+    </section>
+    <table>
+      <caption>October Student Events</caption>
+      <thead>
+        <tr>
+          <th scope="col">Event</th>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Game Night</td>
+          <td>October 8</td>
+          <td>6:00 PM</td>
+          <td>Student Center</td>
+        </tr>
+        <tr>
+          <td>Coding Challenge</td>
+          <td>October 15</td>
+          <td>4:00 PM</td>
+          <td>Room 204</td>
+        </tr>
+        <tr>
+          <td>Fall Cookout</td>
+          <td>October 22</td>
+          <td>5:30 PM</td>
+          <td>Courtyard</td>
+        </tr>
+        <tr>
+          <td>Halloween Party</td>
+          <td>October 29</td>
+          <td>7:00 PM</td>
+          <td>Student Center</td>
+        </tr>
+      </tbody>
+    </table>
+    <section>
+      <h2>Event Registration</h2>
+    </section>
+    <p>Please fill out the form below to register for an event.</p>
+    <form>
+      <input type="text" id="first-name" name="first name" required> i.e., John
+      <input type="text" id="last-name" name="last name" required> i.e., Doe
+      <input type="email" id="email" name="email" required> i.e., john.doe@example.com
+      <br><br>
+      <select id="event" name="event" required>
+        <option value="">Select an event</option>
+        <option value="Game Night">Game Night</option>
+        <option value="Coding Challenge">Coding Challenge</option>
+        <option value="Fall Cookout">Fall Cookout</option>
+        <option value="Halloween Party">Halloween Party</option>
+      </select><br><br>
+      <label><input type="radio" id="full-time" name="student-status" value="full-time"> i am a full time
+        student</label>
+      <label><input type="radio" id="part-time" name="student-status" value="part-time"> i am a part time
+        student</label>
+      <br><br>
+      <section>
+        <h2>Interests</h2>
+      </section>
+      <input type="checkbox" id="gaming" name="gaming"> gaming
+      <br>
+      <input type="checkbox" id="coding" name="coding"> coding
+      <br>
+      <input type="checkbox" id="sports" name="sports"> sports
+      <br>
+      <input type="checkbox" id="community-events" name="community events"> community events
+      <br>
+      <textarea>Comments or Questions:</textarea>
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+  <section></section>
+  <footer></footer>
+</body>
+
+</html>

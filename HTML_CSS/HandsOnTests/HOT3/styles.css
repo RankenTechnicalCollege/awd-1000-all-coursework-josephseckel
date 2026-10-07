@@ -1,0 +1,38 @@
+table {
+  border: 2px solid black;
+} 
+
+th, td {
+  padding: 5px;
+}
+
+thead {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: darkblue;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: blue;
+  color: white;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+main {
+  background-color: aliceblue;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+}
+
