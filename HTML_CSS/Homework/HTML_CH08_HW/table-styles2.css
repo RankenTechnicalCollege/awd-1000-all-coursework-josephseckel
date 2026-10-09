@@ -1,0 +1,42 @@
+* {
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+  color: black;
+  margin: 0 auto;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+  text-align: left;
+  background-color: yellow;
+}
+
+ td:last-child  {
+  text-align: right;
+}
+
+tr:nth-child(even) {
+  background-color: yellow;
+}
+
+td#customer-service, td#editorial, td#marketing {
+  background-color: white;
+}
+
+
+tfoot {
+  background-color: yellow;
+}
+
+tfoot td:first-child {
+  text-align: right;
+}

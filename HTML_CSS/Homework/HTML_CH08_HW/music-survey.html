@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Survey</title>
+  <link rel="stylesheet" href="music-survey.css">
+</head>
+
+<body>
+  <main>
+    <form>
+      <h1>Music Survey</h1>
+
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="e.g. John Doe">
+      <label>E-mail:</label>
+      <input type="email" name="email" placeholder="e.g. john.doe@example.com">
+      <fieldset>
+        <legend>Select your favorite music genre</legend>
+        <label><input type="radio" name="music_survey" value="rock"> Rock</label>
+        <label><input type="radio" name="music_survey" value="pop"> Pop</label>
+        <label><input type="radio" name="music_survey" value="jazz"> Jazz</label>
+        <label><input type="radio" name="music_survey" value="classical"> Classical</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select what music services you use (one or more)</legend>
+        <label><input type="checkbox" name="b" value="other"> Spotify</label>
+        <label><input type="checkbox" name="c" value="other"> Apple Music</label>
+        <label><input type="checkbox" name="a" value="other"> Other</label>
+      </fieldset>
+
+      <label>What does music do for you? </label>
+      <select size="3">
+        <option value="relax">Relax</option>
+        <option value="motivate">Motivate</option>
+        <option value="focus">Focus</option>
+        <option value="reflect">Reflect</option>
+      </select>
+      <br><br>
+      <label>What is your favorite song and what does it mean to you?</label>
+      <textarea name="box" rows="5"></textarea>
+      <br><br>
+      <div class="button-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>
