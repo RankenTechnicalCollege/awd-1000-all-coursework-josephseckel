@@ -1,0 +1,96 @@
+<!--
+    Student Name: Joseph Seckel
+    File Name: contact.html
+    Date: 10/5/2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Strike a Chord: Template</title>
+  <style>
+    .map-frame {
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="contact">
+      <div id="form">
+        <form class="form-grid">
+          <fieldset>
+            <legend>Customer Information</legend>
+            <h2>Complete the form below and one of our staff members will contact you.</h2>
+            <!--start form-->
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+          </fieldset>
+          <fieldset>
+            <legend>Musical Interests</legend>
+            <p>I am interested in:</p>
+
+            <label><input type="checkbox" name="guitarles" id="guitarles" value="guitar lessons">
+              Guitar
+              Lessons</label>
+
+            <label><input type="checkbox" name="pianoles" id="pianoles" value="piano lessons"> Piano
+              Lessons</label>
+
+            <label><input type="checkbox" name="violinles" id="violinles" value="violin lessons">
+              Violin
+              Lessons</label>
+
+            <label><input type="checkbox" name="rent" id="rent" value="rental equipment"> Instrument
+              Rental</label>
+
+            <button type="submit" id="submit" value="Submit" class="btn">Submit</button>
+          </fieldset>
+        </form>
+
+        <h2>Contact Us today to schedule your first lesson!</h2>
+        <p class="tel-link mobile"><a href="tel:8145559228">(814)555&#8209;9228</a></p>
+        <p class="tab-desk">(814) 555-9228</p>
+        <p>Email: <a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
+        <p>we are located at 1122 Music Lane, chicago, Illinois 60007</p>
+        <iframe class="map" src="https://www.google.com/maps?q=Chicago,Illinois&output=embed"
+          title="Map of Chicago, Illinois" width="900" height="600" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; copyright 2026. All rights reserved.</p>
+    <p><a class="email-link" href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
+
+  </footer>
+</body>
+
+</html>
