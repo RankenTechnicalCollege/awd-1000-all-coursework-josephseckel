@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+Student Name: Joseph Seckel
+File Name: contact.html
+Date: 09/13/2026
+-->
+<html lang="en">
+
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="images/android-chrome-192.png">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="tab-desk">
+        <a href="index.html"><img src="images/baby-hawk.jpg" alt="rescued baby hawk"></a>
+      </div>
+      <div class="mobile">
+        <h1>&#128062; Wild Rescues</h1>
+        <h3>Rescue, Rehabilitate, Release.</h3>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="partnership.html">Partnership</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div id="contact">
+        <div id="form">
+          <h2>Complete the form below and we will contact you soon.</h2>
+          <form class="form-grid">
+            <!-- start form -->
+            <fieldset>
+              <legend>Contact Information</legend>
+              <label for="fName">First Name:</label>
+              <input type="text" name="fName" id="fName">
+
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName">
+
+              <label for="bName">Name of Business:</label>
+              <input type="text" name="bName" id="bName">
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email">
+
+              <label for="phone">Phone:</label>
+              <input type="tel" name="phone" id="phone">
+            </fieldset>
+            <fieldset>
+              <legend>Additional Information</legend>
+              <p>I would like more information about:</p>
+              <label>
+                <input type="radio" name="info" id="vol" value="Volunteering">
+                Volunteering
+              </label>
+              <label>
+                <input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">
+                Sponsorship Opportunities
+              </label>
+              <label>
+                <input type="radio" name="info" id="wild" value="Wildlife">
+                Wildlife
+              </label>
+              <label>
+                <input type="radio" name="info" id="other" value="Other">
+                Other, please specify below.
+              </label>
+
+              <label for="questions">What questions do you have for us?</label>
+              <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+
+        <h2>You can reach us at:</h2>
+
+        <p class="tel-link mobile" round><a href="tel:8145558989">(814)&nbsp;555&#8209;8989</a></p>
+        <p class="tab-desk">(814) 555-9228</p>
+        <p>
+          Email:
+          <a href="mailto:contact@wildrescues.net" class="link">
+            contact@wildrescues.net
+          </a>
+        </p>
+
+        <p>
+          Address:
+          <a href="https://www.google.com/maps/search/?api=1&query=Ocala%2C+FL" target="_blank" class="link">
+            8989 Rescue Drive, Ocala, FL 34471
+          </a>
+        </p>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Copyright 2026. All Rights Reserved.</p>
+      <p>
+        <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a>
+      </p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
