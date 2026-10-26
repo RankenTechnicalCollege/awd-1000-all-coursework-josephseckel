@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>McDonald's | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-color: #7a1d16;
+      background-image:
+        linear-gradient(rgba(48, 15, 10, 0.55), rgba(48, 15, 10, 0.65)),
+        url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1920&q=85");
+      background-position: center;
+      background-size: cover;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">McDonald's</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+          aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero text-white text-center py-5" id="home" aria-labelledby="hero-title">
+      <div class="container py-5">
+        <h1 class="display-3 fw-bold" id="hero-title">McDonald's</h1>
+        <p class="lead fs-3 mb-4">Good food. Good times.</p>
+        <p class="mb-1">Enjoy your favorites, made for sharing any time of day.</p>
+        <p class="mb-0">
+          <a class="link-light" href="mailto:hello@mcdonalds.example">hello@mcdonalds.example</a>
+          <span aria-hidden="true"> · </span>
+          <a class="link-light" href="tel:+15550142750">(555)&nbsp;014&#8209;2750</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="container py-5">
+      <div class="row">
+        <section class="col-12 col-lg-4 mb-4" aria-labelledby="approach-title">
+          <h2 class="h3" id="approach-title">Fan Favorites</h2>
+          <p>From Big Macs and Chicken McNuggets to crispy fries, there is something delicious for everyone to enjoy.
+          </p>
+        </section>
+        <section class="col-12 col-lg-4 mb-4" id="products" aria-labelledby="products-title">
+          <h2 class="h3" id="products-title">Something for Every Meal</h2>
+          <p>Start your morning with breakfast, stop by for a quick lunch, or treat yourself to a McFlurry. Check out
+            the menu for tasty choices throughout the day.</p>
+        </section>
+        <section class="col-12 col-lg-4 mb-4" id="team" aria-labelledby="team-title">
+          <h2 class="h3" id="team-title">Here for the Community</h2>
+          <p>Whether you are dining in, picking up your order, or sharing a meal with family and friends, we are glad
+            to be part of your neighborhood.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 McDonald's</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
