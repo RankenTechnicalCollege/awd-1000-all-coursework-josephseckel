@@ -3,8 +3,8 @@
     Chapter case
 
     Tinley Xeriscapes
-    Author: 
-    Date:   
+    Author: Joseph Seckel
+    Date: 10/20/2026
 
     Filename: js01b.js
 */
