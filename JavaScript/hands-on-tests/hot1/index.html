@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS HOT 1</title>
+</head>
+
+<body>
+  <h1>JS HOT 1</h1>
+
+  <section>
+    <h2>Favorite Movies</h2>
+    <label for="movieInput">Enter a movie:</label>
+    <input id="movieInput" type="text">
+    <button id="addMovieButton" type="button">Add Movie</button>
+    <p id="movieMessage" aria-live="polite"></p>
+    <ul id="movieList"></ul>
+  </section>
+
+  <section>
+    <h2>Age Verification</h2>
+    <label for="ageInput">Enter your age:</label>
+    <input id="ageInput" type="text" inputmode="numeric">
+    <button id="verifyAgeButton" type="button">Verify Age</button>
+    <p id="ageMessage" aria-live="polite"></p>
+  </section>
+
+  <section>
+    <h2>Song Lyrics</h2>
+    <label for="numberInput">Enter a number from 1 to 3:</label>
+    <input id="numberInput" type="text">
+    <button id="showLyricsButton" type="button">Show Message</button>
+    <p id="lyricsMessage" aria-live="polite"></p>
+  </section>
+
+  <section>
+    <h2>Odd Numbers</h2>
+    <p id="oddNumbers"></p>
+  </section>
+
+  <script>
+    const favoriteMovies = [
+      "The Matrix",
+      "Spirited Away",
+      "Star Wars"
+    ];
+
+    document.getElementById("addMovieButton").addEventListener("click", () => {
+      const movieInput = document.getElementById("movieInput");
+      const movieMessage = document.getElementById("movieMessage");
+      const movie = movieInput.value.trim();
+
+      if (!movie) {
+        movieMessage.textContent = "Please enter a movie title.";
+        return;
+      }
+
+      favoriteMovies.push(movie);
+      movieInput.value = "";
+      movieMessage.textContent = "";
+
+      const movieList = document.getElementById("movieList");
+      movieList.replaceChildren();
+
+      for (let i = 0; i < favoriteMovies.length; i++) {
+        const listItem = document.createElement("li");
+        listItem.textContent = favoriteMovies[i];
+        movieList.appendChild(listItem);
+      }
+    });
+
+    document.getElementById("verifyAgeButton").addEventListener("click", () => {
+      const ageText = document.getElementById("ageInput").value.trim();
+      const ageMessage = document.getElementById("ageMessage");
+      const age = Number(ageText);
+
+      if (ageText === "" || !Number.isInteger(age)) {
+        ageMessage.textContent = "Please enter your age!";
+      } else if (age < 1 || age > 200) {
+        ageMessage.textContent = "Age out of range!";
+      } else if (age >= 21) {
+        ageMessage.textContent = "Welcome to the venue!";
+      } else {
+        ageMessage.textContent = "You're not old enough!";
+      }
+    });
+
+    document.getElementById("showLyricsButton").addEventListener("click", () => {
+      const numberText = document.getElementById("numberInput").value.trim();
+      const lyricsMessage = document.getElementById("lyricsMessage");
+      const number = Number(numberText);
+
+      if (numberText === "" || Number.isNaN(number)) {
+        lyricsMessage.textContent = "Please enter a number, not a word.";
+      } else if (number === 1) {
+        lyricsMessage.textContent = "One is the loneliest number that you'll ever do.";
+      } else if (number === 2) {
+        lyricsMessage.textContent =
+          "Two can be as bad as one. It's the loneliest number since the number one.";
+      } else if (number === 3) {
+        lyricsMessage.textContent = "There is no three.";
+      } else {
+        lyricsMessage.textContent = "You didn't enter a valid number.";
+      }
+    });
+
+    const oddNumbers = [];
+
+    for (let number = 1; number <= 100; number += 2) {
+      oddNumbers.push(number);
+    }
+
+    document.getElementById("oddNumbers").textContent = oddNumbers.join(", ");
+  </script>
+</body>
+
+</html>
